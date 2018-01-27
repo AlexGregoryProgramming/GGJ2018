@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 26
+  controlID: 9
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 65
+  controlID: 10
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 66
+  controlID: 11
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -327,19 +327,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Environment/Blast Door/Blast Door Material/Walk Plate Material
+    - Assets/Environment/Mid Spacer/Mid Spacer Material
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Environment/Blast Door/Blast Door Material/Walk Plate Material
+  - Assets/Environment/Mid Spacer/Mid Spacer Material
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\STARLIGHT\Starlight-Git\GGJ2018
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 20}
-    m_SelectedIDs: c42d0000
-    m_LastClickedID: 11716
-    m_ExpandedIDs: 00000000382c0000182e0000c22f00000e30000062300000d8300000e231000042340000963700000a38000000ca9a3bffffff7f
+    m_SelectedIDs: 5a2e0000
+    m_LastClickedID: 11866
+    m_ExpandedIDs: 00000000382c00007e2c00001a2e0000c82f000068300000e030000080310000ec310000ae37000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -367,7 +367,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000382c0000182e00000e30000062300000d8300000e23100004234000096370000
+    m_ExpandedIDs: 00000000382c00001a2e0000c82f00001430000068300000e0300000ec31000054340000ae37000022380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -485,9 +485,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 02320000
+    m_SelectedIDs: 642f0000
     m_LastClickedID: 0
-    m_ExpandedIDs: 98fbffff00000000
+    m_ExpandedIDs: 26fbffff42fbffff98fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -543,9 +543,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -57.72719, y: 6.7932167, z: 34.66882}
+    m_Target: {x: -35.0128, y: -3.1519938, z: 18.87272}
     speed: 2
-    m_Value: {x: -57.72719, y: 6.7932167, z: 34.66882}
+    m_Value: {x: -35.0128, y: -3.1519938, z: 18.87272}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -569,13 +569,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.018976664, y: 0.51786286, z: 0.011490448, w: -0.85517603}
+    m_Target: {x: -0.08781361, y: 0.5466509, z: -0.057785038, w: -0.8307344}
     speed: 2
-    m_Value: {x: 0.018976664, y: 0.51786286, z: 0.011490448, w: -0.85517603}
+    m_Value: {x: -0.087813735, y: 0.54665166, z: -0.05778512, w: -0.83073556}
   m_Size:
-    m_Target: 73.62487
+    m_Target: 64.126076
     speed: 2
-    m_Value: 73.62487
+    m_Value: 64.126076
   m_Ortho:
     m_Target: 0
     speed: 2
