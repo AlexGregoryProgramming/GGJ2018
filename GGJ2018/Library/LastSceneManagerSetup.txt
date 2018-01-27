@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Demo Scene.unity
+=======
+- path: Assets/Scenes/Austin Scene.unity
+>>>>>>> 9f0f52239ebc4efdfbecebf368b73e8d8b0361f9
   isLoaded: 1
   isActive: 1
