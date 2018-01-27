@@ -207,6 +207,10 @@ namespace VRTK
 
         public virtual void OnInteractableObjectTouched(InteractableObjectEventArgs e)
         {
+			if (this.gameObject.GetComponent<MachineButton> () != null) 
+			{
+				this.gameObject.GetComponent<MachineButton> ().machine.buttonPress ();
+			}
             if (InteractableObjectTouched != null)
             {
                 InteractableObjectTouched(this, e);
