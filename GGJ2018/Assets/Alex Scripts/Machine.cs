@@ -10,6 +10,14 @@ public class Machine : MonoBehaviour {
 	public Vector3 lidOff;
 	public bool combinationMade;
 	public GameObject crystalPrefab;
+
+	public GameObject particleObject;
+	public GameObject affector;
+	public Vector3 affectorUp;
+	public Vector3 affectorDown;
+	public Color crystalCreationColor;
+
+	public bool isMachineRunning = false;
 	// Use this for initialization
 	void Start () 
 	{
@@ -33,7 +41,7 @@ public class Machine : MonoBehaviour {
 			{
 				//purple crystal
 				Debug.Log("Purple Crystal");
-				
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (127/255.0f, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Violet;
@@ -44,7 +52,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Orange crystal
 				Debug.Log("Orange Crystal");
-				
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (255/255.0f, 127/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Orange;
@@ -55,7 +63,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Red-Violet crystal
 				Debug.Log("Red-Violet Crystal");
-				
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (191/255.0f, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.RedViolet;
@@ -66,7 +74,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Red-Orange crystal
 				Debug.Log("Red-Orange Crystal");
-				
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (255/255.0f, 64/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.RedOrange;
@@ -82,7 +90,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Green crystal
 				Debug.Log("Green Crystal");
-				
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (0, 255/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Green;
@@ -93,7 +101,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Orange crystal
 				Debug.Log("Orange Crystal");
-				
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (255/255.0f, 127/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Orange;
@@ -104,7 +112,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Yellow-Green crystal
 				Debug.Log("Yellow-Green Crystal");
-				
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (191/255.0f, 255/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.YellowGreen;
@@ -115,7 +123,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Yellow-Orange crystal
 				Debug.Log("Yellow-Orange Crystal");
-				
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (255/255.0f, 191/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.YellowOrange;
@@ -131,7 +139,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Green crystal
 				Debug.Log("Green Crystal");
-				
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (0, 255/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Green;
@@ -142,7 +150,7 @@ public class Machine : MonoBehaviour {
 			{
 				//purple crystal
 				Debug.Log("Purple Crystal");
-				
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (127/255.0f, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Violet;
@@ -153,7 +161,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Blue-Green crystal
 				Debug.Log("Blue-Green Crystal");
-				
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (0, 255/255.0f, 127/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.BlueGreen;
@@ -164,7 +172,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Blue-Violet crystal
 				Debug.Log("Blue-Violet Crystal");
-				
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (64/255.0f, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.BlueViolet;
@@ -183,7 +191,7 @@ public class Machine : MonoBehaviour {
 			{
 				//purple crystal
 				Debug.Log("Purple Crystal");
-
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (127/255.0f, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Violet;
@@ -194,7 +202,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Orange crystal
 				Debug.Log("Orange Crystal");
-
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (255/255.0f, 127/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Orange;
@@ -205,7 +213,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Red-Violet crystal
 				Debug.Log("Red-Violet Crystal");
-
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (191/255.0f, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.RedViolet;
@@ -216,7 +224,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Red-Orange crystal
 				Debug.Log("Red-Orange Crystal");
-
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (255/255.0f, 64/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.RedOrange;
@@ -232,7 +240,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Green crystal
 				Debug.Log("Green Crystal");
-
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (0, 255/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Green;
@@ -243,7 +251,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Orange crystal
 				Debug.Log("Orange Crystal");
-
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (255/255.0f, 127/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Orange;
@@ -254,7 +262,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Yellow-Green crystal
 				Debug.Log("Yellow-Green Crystal");
-
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor = new Color (191/255.0f, 255/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.YellowGreen;
@@ -265,7 +273,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Yellow-Orange crystal
 				Debug.Log("Yellow-Orange Crystal");
-
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor = new Color (255/255.0f, 191/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.YellowOrange;
@@ -281,7 +289,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Green crystal
 				Debug.Log("Green Crystal");
-
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor = new Color (0, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Green;
@@ -292,7 +300,7 @@ public class Machine : MonoBehaviour {
 			{
 				//purple crystal
 				Debug.Log("Purple Crystal");
-
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor = new Color (127/255.0f, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Violet;
@@ -303,7 +311,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Blue-Green crystal
 				Debug.Log("Blue-Green Crystal");
-
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (0, 255/255.0f, 127/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.BlueGreen;
@@ -314,7 +322,7 @@ public class Machine : MonoBehaviour {
 			{
 				//Blue-Violet crystal
 				Debug.Log("Blue-Violet Crystal");
-
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor = new Color (64/255.0f, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				//temp.transform.localScale = new Vector3 (0.11f, 0.11f, 0.11f);
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.BlueViolet;
@@ -328,7 +336,7 @@ public class Machine : MonoBehaviour {
 			//destroy crystals
 			Destroy(firstCrystal);
 			Destroy (secondCrystal);
-			lid.transform.position = lidOff;
+			//lid.transform.position = lidOff;
 			combinationMade = false;
 		} 
 		else
@@ -344,6 +352,8 @@ public class Machine : MonoBehaviour {
 			if (firstCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.BlueGreen) 
 			{
 				Destroy (firstCrystal);
+
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (0, 255/255.0f, 127/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Green;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -353,6 +363,7 @@ public class Machine : MonoBehaviour {
 			if (firstCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.YellowGreen) 
 			{
 				Destroy (firstCrystal);
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor = new Color (191/255.0f, 255/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Green;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -362,6 +373,8 @@ public class Machine : MonoBehaviour {
 			if (firstCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.Green) 
 			{
 				Destroy (firstCrystal);
+
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (0, 255/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Yellow;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -371,6 +384,8 @@ public class Machine : MonoBehaviour {
 			if (firstCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.Orange) 
 			{
 				Destroy (firstCrystal);
+
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (255/255.0f, 127/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Red;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -380,6 +395,8 @@ public class Machine : MonoBehaviour {
 			if (firstCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.RedOrange) 
 			{
 				Destroy (firstCrystal);
+
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (255/255.0f, 64/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Red;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -389,6 +406,7 @@ public class Machine : MonoBehaviour {
 			if (firstCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.YellowOrange) 
 			{
 				Destroy (firstCrystal);
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor = new Color (255/255.0f, 191/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Yellow;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -398,6 +416,8 @@ public class Machine : MonoBehaviour {
 			if (firstCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.Violet) 
 			{
 				Destroy (firstCrystal);
+
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor = new Color (127/255.0f, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Red;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -407,6 +427,7 @@ public class Machine : MonoBehaviour {
 			if (firstCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.BlueViolet) 
 			{
 				Destroy (firstCrystal);
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor = new Color (64/255.0f, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Violet;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -416,6 +437,8 @@ public class Machine : MonoBehaviour {
 			if (firstCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.RedViolet) 
 			{
 				Destroy (firstCrystal);
+
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (191/255.0f, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Red;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -429,6 +452,8 @@ public class Machine : MonoBehaviour {
 			if (secondCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.BlueGreen) 
 			{
 				Destroy (secondCrystal);
+
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (0, 255/255.0f, 127/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Green;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -438,6 +463,7 @@ public class Machine : MonoBehaviour {
 			if (secondCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.YellowGreen) 
 			{
 				Destroy (secondCrystal);
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor = new Color (191/255.0f, 255/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Green;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -447,6 +473,8 @@ public class Machine : MonoBehaviour {
 			if (secondCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.Green) 
 			{
 				Destroy (secondCrystal);
+
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (0, 255/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Yellow;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -456,6 +484,8 @@ public class Machine : MonoBehaviour {
 			if (secondCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.Orange) 
 			{
 				Destroy (secondCrystal);
+
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (255/255.0f, 127/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Red;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -465,6 +495,8 @@ public class Machine : MonoBehaviour {
 			if (secondCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.RedOrange) 
 			{
 				Destroy (secondCrystal);
+
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (255/255.0f, 64/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Red;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -474,6 +506,7 @@ public class Machine : MonoBehaviour {
 			if (secondCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.YellowOrange) 
 			{
 				Destroy (secondCrystal);
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor = new Color (255/255.0f, 191/255.0f, 0);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Yellow;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -483,6 +516,8 @@ public class Machine : MonoBehaviour {
 			if (secondCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.Violet) 
 			{
 				Destroy (secondCrystal);
+
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor = new Color (127/255.0f, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Red;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -492,6 +527,7 @@ public class Machine : MonoBehaviour {
 			if (secondCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.BlueViolet) 
 			{
 				Destroy (secondCrystal);
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor = new Color (64/255.0f, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Violet;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -501,6 +537,8 @@ public class Machine : MonoBehaviour {
 			if (secondCrystal.GetComponent<Crystal> ().color == Crystal.CrystalColor.RedViolet) 
 			{
 				Destroy (secondCrystal);
+
+				particleObject.GetComponent<ParticleGridGenerator> ().particleColor =new Color (191/255.0f, 0, 255/255.0f);
 				GameObject temp = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
 				temp.GetComponent<Crystal> ().color = Crystal.CrystalColor.Red;
 				GameObject temp2 = Instantiate (crystalPrefab, this.transform.position, Quaternion.identity) as GameObject;
@@ -513,9 +551,11 @@ public class Machine : MonoBehaviour {
 		if ((firstCrystal != null && secondCrystal == null) || (firstCrystal == null && secondCrystal != null)) 
 		{
 			SplitCrystals ();
+			StartCoroutine (showParticlesSplit ());
 		}
 		if (firstCrystal != null && secondCrystal != null) {
 			CombineCrystals ();
+			StartCoroutine (showParticlesCombine ());
 		}
 	}
 	void OnTriggerEnter(Collider collider)
@@ -529,7 +569,7 @@ public class Machine : MonoBehaviour {
 			else if (secondCrystal == null) 
 			{
 				secondCrystal = collider.gameObject;
-				lid.transform.position = lidOn;
+				//lid.transform.position = lidOn;
 				//CombineCrystals ();
 			} 
 			else 
@@ -551,5 +591,68 @@ public class Machine : MonoBehaviour {
 		{
 			secondCrystal = null;
 		}
+	}
+
+	public IEnumerator SlideLid(float time)
+	{
+		isMachineRunning = true;
+		float firstDuration = 0.0f;
+		float secondDuration = 0.0f;
+		lidOff = lid.transform.position;
+		lidOn = new Vector3 (lid.transform.position.x, lid.transform.position.y, lid.transform.position.z + 0.65f);
+		while (firstDuration < time) 
+		{
+			lid.transform.position = Vector3.Lerp (lidOff, lidOn, firstDuration / time);
+			firstDuration += Time.deltaTime;
+			yield return new WaitForSeconds (Time.deltaTime);
+		}
+		buttonPress ();
+		//particleObject.GetComponent<ParticleGridGenerator> ().particleColor = crystalCreationColor;
+		yield return new WaitForSeconds (0.5f);
+
+		yield return new WaitForSeconds (0.5f);
+
+		while (secondDuration < time) 
+		{
+			lid.transform.position = Vector3.Lerp (lidOn, lidOff, secondDuration / time);
+			secondDuration += Time.deltaTime;
+			yield return new WaitForSeconds (Time.deltaTime);
+		}
+		isMachineRunning = false;
+		yield return null;
+	}
+
+	public IEnumerator showParticlesCombine()
+	{
+
+		affector.transform.position = affectorUp;
+		float particleTimer = 0.0f;
+		particleObject.SetActive (true);
+		while (particleTimer < 0.5f) 
+		{
+
+			affector.transform.position = Vector3.Lerp (affectorUp, affectorDown, particleTimer / 0.5f);
+			particleTimer += Time.deltaTime;
+			yield return new WaitForSeconds (Time.deltaTime);
+		}
+		affector.transform.position = affectorUp;
+		particleObject.SetActive (false);
+	}
+
+	public IEnumerator showParticlesSplit()
+	{
+
+		float particleTimer = 0.0f;
+		affector.transform.position = affectorDown;
+		particleObject.SetActive (true);
+		while (particleTimer < 0.5f) 
+		{
+
+			affector.transform.position = Vector3.Lerp (affectorDown, affectorUp, particleTimer / 0.5f);
+			particleTimer += Time.deltaTime;
+			yield return new WaitForSeconds (Time.deltaTime);
+		}
+		affector.transform.position = affectorUp;
+		particleObject.SetActive (false);
 	}
 }

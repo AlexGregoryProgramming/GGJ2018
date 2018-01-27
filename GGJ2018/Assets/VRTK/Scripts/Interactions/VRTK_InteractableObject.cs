@@ -207,9 +207,9 @@ namespace VRTK
 
         public virtual void OnInteractableObjectTouched(InteractableObjectEventArgs e)
         {
-			if (this.gameObject.GetComponent<MachineButton> () != null) 
+			if (this.gameObject.GetComponent<MachineButton> () != null && this.gameObject.GetComponent<MachineButton> ().machine.isMachineRunning == false) 
 			{
-				this.gameObject.GetComponent<MachineButton> ().machine.buttonPress ();
+				this.gameObject.GetComponent<MachineButton> ().machine.StartCoroutine (this.gameObject.GetComponent<MachineButton> ().machine.SlideLid (0.5f));
 			}
             if (InteractableObjectTouched != null)
             {
