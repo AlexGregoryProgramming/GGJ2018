@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/alexTest.unity
-=======
-- path: Assets/Scenes/BarretTest.unity
->>>>>>> 551f53715167755c3e974130b570c82111a2f8f2
   isLoaded: 1
   isActive: 1
