@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/alexTest.unity
+=======
+- path: Assets/Scenes/Ozzy Battery.unity
+>>>>>>> 8362addd02e4e959c4ed2175474eca430f8c424c
   isLoaded: 1
   isActive: 1
