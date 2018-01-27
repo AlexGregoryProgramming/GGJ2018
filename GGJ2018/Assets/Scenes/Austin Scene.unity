@@ -720,7 +720,7 @@ Light:
     m_Bits: 4294967295
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 2
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -1692,7 +1692,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1865829174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.10022151, y: 3.7779555, z: -3.1262827}
+  m_LocalPosition: {x: 0.10022151, y: 2.208, z: -3.1262827}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1456418435}
@@ -1878,12 +1878,12 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -1906,18 +1906,18 @@ MonoBehaviour:
   useBlur: 0
   FrequencyMultiplier: 0
   SamplesAmount: 1
-  SecondFrequencyStep: 1.21
+  SecondFrequencyStep: 1.44
   maxDistance: 0.999
   downSample: 0.5
-  SampleDistribution: 1.62
+  SampleDistribution: 1.49
   aoRadius: 0.132
-  angleBias: 0.676
-  intensity: 0.9
+  angleBias: 0.9
+  intensity: 3
   ColorBleedIntensity: 0.1
-  AO_Exponential: 0.41
+  AO_Exponential: 1.12
   distanceBias: 10
   scene_scale: 1.85
-  NormalSource: 1
+  NormalSource: 2
   blurRadius: 1.31
   showAOImageOnly: 0
 --- !u!114 &2020638084
