@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/BarretTest.unity
+=======
+- path: Assets/Ozzy Hamster.unity
+>>>>>>> b648ea79611347002f60cd88386ea2e4c1c4deae
   isLoaded: 1
   isActive: 1
