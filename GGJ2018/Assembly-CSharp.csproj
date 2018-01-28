@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Alex Scripts\AudioManager.cs" />
      <Compile Include="Assets\Alex Scripts\Crystal.cs" />
      <Compile Include="Assets\Alex Scripts\GameManager.cs" />
      <Compile Include="Assets\Alex Scripts\LaserMachine.cs" />
