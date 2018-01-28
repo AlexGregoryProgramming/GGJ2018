@@ -97,8 +97,8 @@ Material:
     - _LockYOffset: 1
     - _Metallic: 1
     - _MetallicSmoothnessRandomOffset: 1
-    - _Noise01ScrollSpeed: 0.08
-    - _Noise02ScrollSpeed: 0.12
+    - _Noise01ScrollSpeed: 0.04
+    - _Noise02ScrollSpeed: 0.02
     - _NoiseDistortionPower: 0.2
     - _NoiseDistortionScrollSpeed: 0.04
     - _NoisePower: 8
