@@ -21,7 +21,8 @@ public class Machine : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		
+		affectorUp = affector.transform.position;
+		affectorDown = new Vector3 (affector.transform.position.x, affector.transform.position.y - 2.4f, affector.transform.position.z);
 	}
 	
 	// Update is called once per frame

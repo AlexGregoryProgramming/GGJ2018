@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Alex Scripts\ParticleExposionScript.cs">
+    <Files>
+      <File FileName="Assets\Alex Scripts\Machine.cs" Line="592" Column="4" />
+      <File FileName="Assets\Alex Scripts\Crystal.cs" Line="65" Column="4" />
+      <File FileName="Assets\VRTK\Scripts\Interactions\VRTK_InteractableObject.cs" Line="217" Column="150" />
+      <File FileName="Assets\SineVFX\Volumetric3DLasers\Scripts\ProgressControlV3D.cs" Line="15" Column="21" />
+      <File FileName="Assets\SineVFX\Volumetric3DLasers\Scripts\MouseTargetV3D.cs" Line="24" Column="83" />
+      <File FileName="Assets\SineVFX\Volumetric3DLasers\Scripts\LaserLineV3D.cs" Line="10" Column="45" />
+      <File FileName="Assets\Alex Scripts\LaserMachine.cs" Line="100" Column="1" />
+      <File FileName="Assets\Alex Scripts\LaserMachineButton.cs" Line="7" Column="30" />
+      <File FileName="Assets\Alex Scripts\GameManager.cs" Line="70" Column="11" />
+      <File FileName="Assets\Alex Scripts\ParticleExposionScript.cs" Line="40" Column="32" />
+      <File FileName="Assets\SineVFX\LivingParticles\Resources\Shaders\LivingParticleAlphaBlended.shader" Line="1" Column="1" />
+=======
 ﻿<Properties StartupItem="GGJ2018.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AmplifyColor\Readme.txt">
@@ -7,6 +24,7 @@
       <File FileName="Assets\Alex Scripts\MachineButton.cs" Line="1" Column="1" />
       <File FileName="Assets\VRTK\Scripts\Interactions\VRTK_InteractableObject.cs" Line="1" Column="1" />
       <File FileName="Assets\AmplifyColor\Readme.txt" Line="1" Column="1" />
+>>>>>>> 33edf809081c5b5bc59bdac5f6dc6e952951dfbc
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

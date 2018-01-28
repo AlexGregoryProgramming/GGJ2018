@@ -1,4 +1,12 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Demo Scene.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Alex Demo Scene.unity
+=======
+- path: Assets/Scenes/Austin Scene.unity
+>>>>>>> 33edf809081c5b5bc59bdac5f6dc6e952951dfbc
+>>>>>>> c03c7f7332cdd85c4b9490c469e4bfe3bd454067
   isLoaded: 1
   isActive: 1
