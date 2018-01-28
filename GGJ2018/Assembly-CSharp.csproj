@@ -58,6 +58,17 @@
      <Compile Include="Assets\Alex Scripts\Machine.cs" />
      <Compile Include="Assets\Alex Scripts\MachineButton.cs" />
      <Compile Include="Assets\Alex Scripts\ParticleExposionScript.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorBase.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorEffect.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorTriggerProxy.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorTriggerProxy2D.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorTriggerProxyBase.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorVolume.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorVolume2D.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\AmplifyColorVolumeBase.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Runtime\VersionInfo.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Runtime\VolumeEffects.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Runtime\VolumeEffectsFlags.cs" />
      <Compile Include="Assets\BarretScripts\FireExtinguisher.cs" />
      <Compile Include="Assets\BarretScripts\GeneratorFire.cs" />
      <Compile Include="Assets\Hamster Scripts\HamsterCage.cs" />
@@ -543,6 +554,7 @@
      <None Include="Assets\Wisdom\Standard Assets\Effects\AntiAliasing\FXAA\Resources\FXAA3.cginc" />
      <None Include="Assets\SineVFX\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
      <None Include="Assets\SineVFX\PostProcessing\Resources\Shaders\LutGen.shader" />
+     <None Include="Assets\AmplifyColor\Resources\MaskBlend.shader" />
      <None Include="Assets\SineVFX\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
      <None Include="Assets\Wisdom\Wisdom AO\shaders\Double_Frq_AO.cginc" />
@@ -563,11 +575,15 @@
      <None Include="Assets\SineVFX\PostProcessing\Resources\Shaders\Uber.shader" />
      <None Include="Assets\SineVFX\Volumetric3DLasers\Resources\Shaders\LaserLayerTessOpaqueSolidv2.shader" />
      <None Include="Assets\VRTK\Scripts\Internal\Shaders\UIOverlay.shader" />
+     <None Include="Assets\AmplifyColor\Resources\Blend.shader" />
+     <None Include="Assets\AmplifyColor\Resources\BlendCache.shader" />
      <None Include="Assets\SteamVR\InteractionSystem\Teleport\Shaders\Highlight.shader" />
      <None Include="Assets\SineVFX\PostProcessing\Resources\Shaders\Blit.shader" />
+     <None Include="Assets\AmplifyColor\Resources\Mask.shader" />
      <None Include="Assets\VRTK\Scripts\Internal\Shaders\VRTK_OutlineBasic.shader" />
      <None Include="Assets\SineVFX\Volumetric3DLasers\Resources\Shaders\SmartWaveParticle.shader" />
      <None Include="Assets\SineVFX\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+     <None Include="Assets\AmplifyColor\Samples\Check out the full LUT Package.txt" />
      <None Include="Assets\VRTK\Scripts\Internal\Shaders\AdaptiveQualityDebugVisualization.shader" />
      <None Include="Assets\SineVFX\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
      <None Include="Assets\Wisdom\Standard Assets\Effects\AntiAliasing\FXAA\Resources\FXAA.shader" />
@@ -584,6 +600,7 @@
      <None Include="Assets\SineVFX\Volumetric3DLasers\Resources\Shaders\BlackHoleCore.shader" />
      <None Include="Assets\SineVFX\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
      <None Include="Assets\Wisdom\Standard Assets\Effects\AntiAliasing\SMAA\Resources\SMAA.shader" />
+     <None Include="Assets\AmplifyColor\Readme.txt" />
      <None Include="Assets\Wisdom\Standard Assets\Effects\Bloom\Resources\Bloom.shader" />
      <None Include="Assets\SineVFX\PostProcessing\Resources\Shaders\Common.cginc" />
      <None Include="Assets\SineVFX\Volumetric3DLasers\Resources\Shaders\DistortionParticle.shader" />
@@ -596,12 +613,15 @@
      <None Include="Assets\SineVFX\Volumetric3DLasers\Resources\Shaders\LaserLayerTessAdditive.shader" />
      <None Include="Assets\Wisdom\Standard Assets\Effects\AntiAliasing\SMAA\Resources\SMAA.cginc" />
      <None Include="Assets\SineVFX\LivingParticles\Resources\UI\license.txt" />
+     <None Include="Assets\AmplifyColor\Resources\ProcessOnly.shader" />
      <None Include="Assets\SineVFX\PostProcessing\Resources\Shaders\Bloom.cginc" />
      <None Include="Assets\SineVFX\Volumetric3DLasers\Resources\Shaders\LaserLayerTessOpaqueSolid.shader" />
      <None Include="Assets\SineVFX\PostProcessing\Resources\Shaders\TAA.shader" />
      <None Include="Assets\SineVFX\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
      <None Include="Assets\SineVFX\PostProcessing\Resources\Shaders\TAA.cginc" />
      <None Include="Assets\SineVFX\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+     <None Include="Assets\AmplifyColor\Resources\DepthMask.shader" />
+     <None Include="Assets\AmplifyColor\Resources\Common.cginc" />
      <None Include="Assets\SineVFX\PostProcessing\Resources\Shaders\GrainGen.shader" />
      <None Include="Assets\SineVFX\LivingParticles\Resources\Shaders\LivingParticleFloor.shader" />
      <None Include="Assets\SineVFX\PostProcessing\Resources\Shaders\FXAA.shader" />
@@ -610,6 +630,8 @@
      <None Include="Assets\Wisdom\Standard Assets\Effects\TonemappingColorGrading\Resources\TonemappingColorGrading.shader" />
      <None Include="Assets\SineVFX\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
      <None Include="Assets\Wisdom\Wisdom AO\shaders\AOV2.cginc" />
+     <None Include="Assets\AmplifyColor\Resources\DepthMaskBlend.shader" />
+     <None Include="Assets\AmplifyColor\Resources\Base.shader" />
      <None Include="Assets\SineVFX\PostProcessing\Resources\Shaders\Bloom.shader" />
      <None Include="Assets\Wisdom\Wisdom AO\WisdomAOV2.shader" />
      <None Include="Assets\SineVFX\LivingParticles\Readme.txt" />
@@ -736,6 +758,12 @@
  </Reference>
  <Reference Include="UnityEditor.Facebook.Extensions">
  <HintPath>C:/Program Files/Unity201730f3/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="AmplifyColor">
+ <HintPath>C:/Users/alegrego/Documents/GGJ2018/GGJ2018/Assets/AmplifyColor/Plugins/AmplifyColor.dll</HintPath>
+ </Reference>
+ <Reference Include="AmplifyColorEditor">
+ <HintPath>C:/Users/alegrego/Documents/GGJ2018/GGJ2018/Assets/AmplifyColor/Plugins/Editor/AmplifyColorEditor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Users/alegrego/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>

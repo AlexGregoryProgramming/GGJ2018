@@ -51,6 +51,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\About.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\AmplifyColorEffectEditor.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\AmplifyColorEffectEditorBase.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\AmplifyColorVolumeEditor.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\AmplifyColorVolumeEditorBase.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\BackBufferHandler.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\CameraCollection.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\EncryptDecrypt.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\FileHandler.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\ImageResult.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\LUTEditor.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\LUTResult.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\LUTSettings.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\LUTWriter.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\PhotoshopConnection.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\PhotoshopEncryptDecrypt.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\PhotoshopHandler.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\PhotoshopProtocol.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\PhotoshopTouchHelper.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\ResolutionSettings.cs" />
+     <Compile Include="Assets\AmplifyColor\Plugins\Editor\ToolSettings.cs" />
      <Compile Include="Assets\SineVFX\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
      <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
      <Compile Include="Assets\SineVFX\PostProcessing\Editor\Models\AntialiasingModelEditor.cs" />
@@ -208,6 +229,12 @@
  </Reference>
  <Reference Include="UnityEditor.Facebook.Extensions">
  <HintPath>C:/Program Files/Unity201730f3/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="AmplifyColor">
+ <HintPath>C:/Users/alegrego/Documents/GGJ2018/GGJ2018/Assets/AmplifyColor/Plugins/AmplifyColor.dll</HintPath>
+ </Reference>
+ <Reference Include="AmplifyColorEditor">
+ <HintPath>C:/Users/alegrego/Documents/GGJ2018/GGJ2018/Assets/AmplifyColor/Plugins/Editor/AmplifyColorEditor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Users/alegrego/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
