@@ -211,6 +211,11 @@ namespace VRTK
 			{
 				this.gameObject.GetComponent<MachineButton> ().machine.StartCoroutine (this.gameObject.GetComponent<MachineButton> ().machine.SlideLid (0.5f));
 			}
+
+			if (this.gameObject.GetComponent<LaserMachineButton> () != null && this.gameObject.GetComponent<LaserMachineButton> ().machine.isFiring == false) 
+			{
+				this.gameObject.GetComponent<LaserMachineButton> ().machine.StartCoroutine (this.gameObject.GetComponent<LaserMachineButton> ().machine.LaserFire());
+			}
             if (InteractableObjectTouched != null)
             {
                 InteractableObjectTouched(this, e);
