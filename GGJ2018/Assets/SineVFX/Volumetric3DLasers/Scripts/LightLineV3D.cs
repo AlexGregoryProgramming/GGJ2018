@@ -22,8 +22,8 @@ public class LightLineV3D : MonoBehaviour
     private Vector3[] pointLightSpawnPositions;
     private float globalProgress;
     private float globalimpactProgress;
-    private int positionArrayLenght;
-    private Light[] lights;
+    public int positionArrayLenght;
+    public Light[] lights;
     private int roundedMaxLength;
 
     private float progress;

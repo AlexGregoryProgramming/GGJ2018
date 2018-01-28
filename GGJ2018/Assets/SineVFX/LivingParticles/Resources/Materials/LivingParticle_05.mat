@@ -32,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Ramp:
-        m_Texture: {fileID: 2800000, guid: 6f9eb5880c1d3ed4499628d77b00c3ee, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2a4fc9827ab142c0ab7b51e0c9a84f6f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _tex4coord:

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MachineButton : MonoBehaviour {
 	public Machine machine;
+
+	public bool isAnimating = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,5 +15,27 @@ public class MachineButton : MonoBehaviour {
 	void Update () {
 		
 	}
-		
+	public IEnumerator buttonPress()
+	{
+		isAnimating = true;
+		Vector3 start = this.gameObject.transform.position;
+		Vector3 end = new Vector3 (this.gameObject.transform.position.x- 0.02f,this.gameObject.transform.position.y - 0.02f,this.gameObject.transform.position.z );
+		float first = 0.0f;
+		float second = 0.0f;
+		while (first < 0.2f) 
+		{
+			yield return new WaitForSeconds (Time.deltaTime);
+			first += Time.deltaTime; 
+			this.gameObject.transform.position = Vector3.Lerp (start, end, first / 0.2f);
+		}
+
+		while (second < 0.5f) 
+		{
+			yield return new WaitForSeconds (Time.deltaTime);
+			second += Time.deltaTime; 
+			this.gameObject.transform.position = Vector3.Lerp (end, start, second / 0.5f);
+
+		}
+		isAnimating = false;
+	}
 }

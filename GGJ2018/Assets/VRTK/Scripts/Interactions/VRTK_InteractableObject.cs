@@ -209,12 +209,25 @@ namespace VRTK
         {
 			if (this.gameObject.GetComponent<MachineButton> () != null && this.gameObject.GetComponent<MachineButton> ().machine.isMachineRunning == false) 
 			{
+				Debug.Log ("Machine Button");
+				this.gameObject.GetComponent<MachineButton> ().StartCoroutine (this.gameObject.GetComponent<MachineButton> ().buttonPress ());
 				this.gameObject.GetComponent<MachineButton> ().machine.StartCoroutine (this.gameObject.GetComponent<MachineButton> ().machine.SlideLid (0.5f));
 			}
 
-			if (this.gameObject.GetComponent<LaserMachineButton> () != null && this.gameObject.GetComponent<LaserMachineButton> ().machine.isFiring == false) 
+			if (this.gameObject.GetComponent<LaserMachineButton> () != null && this.gameObject.GetComponent<LaserMachineButton> ().machine.isFiring == false && this.gameObject.GetComponent<LaserMachineButton> ().isAnimating == false && this.gameObject.GetComponent<LaserMachineButton> ().machine.gm.isInterrupted == false) 
 			{
+				this.gameObject.GetComponent<LaserMachineButton> ().StartCoroutine (this.gameObject.GetComponent<LaserMachineButton> ().buttonPress ());
 				this.gameObject.GetComponent<LaserMachineButton> ().machine.StartCoroutine (this.gameObject.GetComponent<LaserMachineButton> ().machine.LaserFire());
+			}
+
+			if (this.gameObject.GetComponent<OnButton> () != null &&  this.gameObject.GetComponent<OnButton> ().isAnimating == false) 
+			{
+				this.gameObject.GetComponent<OnButton> ().StartCoroutine (this.gameObject.GetComponent<OnButton> ().buttonPress ());
+			}
+
+			if (this.gameObject.GetComponent<OffButton> () != null && this.gameObject.GetComponent<OffButton> ().isAnimating == false ) 
+			{
+				this.gameObject.GetComponent<OffButton> ().StartCoroutine (this.gameObject.GetComponent<OffButton> ().buttonPress ());
 			}
             if (InteractableObjectTouched != null)
             {
